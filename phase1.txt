@@ -1,0 +1,43 @@
+User
+ ↓
+FastAPI
+ ↓
+LLM
+ ↓
+Structured intent
+ ↓
+Python router
+ ↓
+Mock restaurant tools
+ ↓
+LLM
+ ↓
+Response
+
+"Hey, I'd like to book a table for four tomorrow evening."
+    ↓
+{
+  "intent": "reservation",
+  "party_size": 4,
+  "date": "2026-09-12",
+  "time": null,
+  "seating": null
+}
+
+Natural language
+      ↓
+   LLM
+      ↓
+Structured data
+      ↓
+Backend validation
+      ↓
+Business logic
+
+Without structured output, the model might return:
+
+    Sure! I'd be happy to help you book a table for four tomorrow evening.
+    Could you let me know what time you'd prefer?
+    
+
+
